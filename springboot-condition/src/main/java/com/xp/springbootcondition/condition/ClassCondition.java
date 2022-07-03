@@ -13,7 +13,7 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
 public class ClassCondition implements Condition {
     @Override
     public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
-        //1.导入jedis创建bean
+        //导入jedis创建bean
         // 判断是否存在jedis,存在就创建getUser这个bean；不存在就不创建getUser这个bean
         boolean flag = true;
         try {
